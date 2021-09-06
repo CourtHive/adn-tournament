@@ -1,0 +1,31 @@
+{
+  "name": "@adonsio/adn-tournament",
+  "version": "1.5.4",
+  "author": "Dominik Reuting",
+  "homepage": "https://github.com/Adonsio/adn-tournament#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adonsio/adn-tournament.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adonsio/adn-tournament/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "12.2.4",
+    "@angular/core": "12.2.4"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^12.2.4"
+  },
+  "keywords": [
+    "angular",
+    "tournament",
+    "tournament-bracket",
+    "bracket",
+    "esport"
+  ]
+}
