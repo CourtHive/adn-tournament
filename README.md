@@ -57,7 +57,7 @@ As Tournament you provide an object that contains your tournament data \(example
 
 #### Demo Tournament data
 
-```javascript
+```typescript
   myTournamentData: AdnTournament = {
     rounds: [
       {
