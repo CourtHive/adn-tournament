@@ -1,30 +1,34 @@
-# AdnTournament
+---
+description: >-
+  This is a Angular (12.2.4) Package which allows you to display Tournament
+  Brackets.
+---
 
-This packages allows you to generate Tournament Brackets in **Angular v12.2.4**.
-It's currently **work in progress** so use it at your own risk.
+# Adonsio's Tournament Bracket Package
 
-<br>
-<br>
+## AdnTournament
+
+This packages allows you to generate Tournament Brackets in **Angular v12.2.4**. It's currently **work in progress** so use it at your own risk.
 
 **The Documentation will be more detailed soon**
 
+#### If you have any questions reach out to me on Twitter [@adonsio](https://www.twitter.com/Adonsio)
 
-### If you have any questions reach out to me on Twitter [@adonsio](https://www.twitter.com/Adonsio "@adonsio")
+## How to use
 
-<br>
-<br>
-<br>
+#### Match Component
 
-# How to use
+Create a new Angular Component.   
+ In the TypeScript file of the Component add a Input   
 
-### Match Component
-Create a new Angular Component. <br>
-In the TypeScript file of the Component add a Input <br>
-```ts
+
+```typescript
 @Input() match: any
 ```
+
 The HTML part can be customized but for now here is an example
-```html
+
+```markup
 <div class="ngtt__match-wrapper">
 <div class="ngtt__team-wrapper" *ngFor="let team of match?.teams">
   <div class="ngtt__team-avatar"></div>
@@ -34,23 +38,26 @@ The HTML part can be customized but for now here is an example
 </div>
 ```
 
-### Render the Tournament Bracket
+#### Render the Tournament Bracket
+
 Import the AdnSingleEliminationTree in your module and use it like so:
-```html
+
+```markup
     <adn-single-elimination-tree 
     [tournament]="myTournamentData" 
     [matchTemplate]="myMatchTemplate">
     </adn-single-elimination-tree>
-    
+
     <ng-template #myMatchTemplate let-match>
       <app-match [match]="match"></app-match>
     </ng-template>
 ```
-As Tournament you provice a object that contains your tournament data (example shown below)
-For the Match Template you provide your Match Component
 
-### Demo Tournament data
-```js 
+As Tournament you provide an object that contains your tournament data \(example shown below\) For the Match Template you provide your Match Component
+
+#### Demo Tournament data
+
+```javascript
   myTournamentData: AdnTournament = {
     rounds: [
       {
@@ -155,22 +162,29 @@ For the Match Template you provide your Match Component
       }
     ]
   };
-
 ```
 
-## Styling
+### Styling
+
 Import the styles from:
- ```scss
+
+```css
  @import "node_modules/@adonsio/adn-tournament/lib/styles/adn-styles";
- ``` 
- Or simply copy the styles folder located in 
- ```
+```
+
+Or simply copy the styles folder located in
+
+```text
  node_modules/@adonsio/adn-tournament/lib/
- ```
+```
+
 and paste it into your project
 
- Then you are able to easily customize the styles in the `variables.scss`
- <br>
- <br>
-# Example
- ![Example](https://i.imgur.com/Mh8YTru.png)
+Then you are able to easily customize the styles in the `variables.scss`   
+   
+
+
+## Example
+
+![Example](https://i.imgur.com/Mh8YTru.png)
+
