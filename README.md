@@ -28,7 +28,7 @@ Create a new Angular Component.
 
 The HTML part can be customized but for now here is an example
 
-```markup
+```html
 <div class="ngtt__match-wrapper">
 <div class="ngtt__team-wrapper" *ngFor="let team of match?.teams">
   <div class="ngtt__team-avatar"></div>
@@ -42,7 +42,7 @@ The HTML part can be customized but for now here is an example
 
 Import the AdnSingleEliminationTree in your module and use it like so:
 
-```markup
+```html
     <adn-single-elimination-tree 
     [tournament]="myTournamentData" 
     [matchTemplate]="myMatchTemplate">
